@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>反霸凌網頁</title>
+        <style>
+            body {
+                font-family: 'JhengHei', sans-serif;
+                background-color: #f0f0f5;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                text-align: center;
+                padding: 20px;
+                background-color: #ff4c4c;
+                color: white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            header h1 {
+                font-size: 36px;
+                margin: 0;
+            }
+            header h2 {
+                font-size: 24px;
+                margin: 5px 0;
+            }
+            header h3 {
+                font-size: 18px;
+                margin: 5px 0;
+            }
+            .header-alt {
+                text-align: center;
+                padding: 20px;
+                background-color: #e0f7fa;
+                color: #004d40;
+            }
+            .header-alt h1 {
+                font-size: 48px;
+                margin: 10px 0;
+            }
+            .header-alt h2 {
+                font-size: 36px;
+                margin: 5px 0;
+            }
+            .header-alt h3 {
+                font-size: 30px;
+                margin: 5px 0;
+            }
+            .content {
+                padding: 20px;
+                background-color: white;
+                display: none;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+                border-radius: 10px;
+            }
+            .content h4, .content h5, .content p {
+                margin: 20px 0;
+                line-height: 1.6;
+            }
+            .button {
+                font-size: 20px;
+                color: white;
+                background-color: #007bff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                display: inline-block;
+                margin: 10px 0;
+                transition: background-color 0.3s ease;
+            }
+            .button:hover {
+                background-color: #0056b3;
+            }
+            .video-container {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .video-container iframe {
+                width: 80%;
+                height: 450px;
+                border: none;
+                border-radius: 10px;
+            }
+            nav {
+                text-align: center;
+                background-color: #333;
+                padding: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            nav a {
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: inline-block;
+                transition: background-color 0.3s ease;
+            }
+            nav a:hover {
+                background-color: #575757;
+            }
+            footer {
+                text-align: center;
+                background-color: #ff4c4c;
+                font-size: 20px;
+                color: white;
+                padding: 10px;
+                box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+                margin-top: 20px;
+            }
+        </style>
+        <script>
+            function showPage(pageId) {
+                var pages = document.querySelectorAll('.content');
+                pages.forEach(function(page) {
+                    page.style.display = 'none';
+                });
+                document.getElementById(pageId).style.display = 'block';
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>反霸凌網頁</h1>
+            <h2>讓受害者平復情緒</h2>
+            <h3>開發者：山老闆</h3>
+        </header>
+        <nav>
+            <a href="#home" onclick="showPage('home')">首頁</a>
+            <a href="#page1" onclick="showPage('page1')">肢體霸凌</a>
+            <a href="#page2" onclick="showPage('page2')">言語霸凌</a>
+            <a href="#page3" onclick="showPage('page3')">關係霸凌</a>
+            <a href="#page4" onclick="showPage('page4')">性霸凌</a>
+            <a href="#page5" onclick="showPage('page5')">反擊霸凌</a>
+            <a href="#page6" onclick="showPage('page6')">網路霸凌</a>
+            <a href="https://forms.gle/5K7V5YmMUCwXFS1V7" class="button" target="_blank">填表</a>
+        </nav>
+        
+        <div id="home" class="content">
+            <h4>反霸凌專線1953</h4>
+            <p>如果您或您認識的人正在經歷霸凌，請撥打反霸凌專線1953尋求幫助。</p>
+        </div>
+        
+        <div id="page1" class="content">
+            <div class="header-alt">
+                <h1>肢體霸凌</h1>
+                <h2>最明顯的霸凌</h2>
+                <h3>肢體受傷大，但心靈受的傷不見得大</h3>
+            </div>
+            
+            <h4>定義</h4>
+            <p>肢體霸凌，就是傷害身體的霸凌，如：打人、踹人...等。</p>
+            
+            <h4>影響</h4>
+            <p>可能身上很多疤痕，或甚至去住院；但心靈受的傷較其他種類之霸凌來的小。</p>
+
+            <h4>預防</h4>
+            <p>當受傷害時，可以將霸凌者推開，並趕快移步至老師旁邊，並先告訴老師。</p>
+
+            <h4>處理方法</h4>
+            <p>如果你成為肢體霸凌的受害者，請立即告訴信任的成年人，如老師或家長，並記錄下事件的時間和地點。</p>
+
+            <h4>相關法條</h4>
+            <h5>刑法 第277條</h5>
+            <p>1. 傷害人之身體或健康者，處五年以下有期徒刑、拘役或五十萬元以下罰金。</p>
+            <p>2. 犯前項之罪，因而致人於死者，處無期徒刑或七年以上有期徒刑；致重傷者，處三年以上十年以下有期徒刑。</p>
+            
+            <h5>刑法 第23條</h5>
+            <p>對於現在不法之侵害，而出於防衛自己或他人權利之行為，不罰。但防衛行為過當者，得減輕或免除其刑。</p>
+        </div>
+
+        <div id="page2" class="content">
+            <div class="header-alt">
+                <h1>言語霸凌</h1>
+                <h2>嘴巴打耳朵的肢體霸凌</h2>
+                <h3>家長們說不要理他們，只因為他們不懂</h3>
+            </div>
+            
+            <h4>定義</h4>
+            <p>言語霸凌，就是一直罵別人。常見的用詞有：「娘砲」、「北七」、「智障」等。</p>
+            
+            <h4>影響</h4>
+            <p>心靈受傷非常大，可是也常常被認為謾罵人是他們的「言論自由」，因而感到十分無助。</p>
+
+            <h4>預防</h4>
+            <p>受到傷害時，跟信任的人說，若班導師不理，甚至可自己去學務處嘗試通報。</p>
+
+            <h4>處理方法</h4>
+            <p>若遇到言語霸凌，不要默默承受，應及時告訴老師或家長，並記錄下霸凌言語和時間。</p>
+
+            <h4>相關法條</h4>
+            <h5>刑法 第309條</h5>
+            <p>公然侮辱人者，處拘役或三百元以下罰金。以強暴犯前項之罪者，處一年以下有期徒刑、拘役或五百元以下罰金。</p>
+        </div>
+
+        <div id="page3" class="content">
+            <div class="header-alt">
+                <h1>關係霸凌</h1>
+                <h2>讓受害者感到孤立無援</h2>
+                <h3>社交圈被排擠是一種很痛苦的經歷</h3>
+            </div>
+            
+            <h4>定義</h4>
+            <p>關係霸凌，就是透過排擠、孤立或故意忽略他人來傷害他人。</p>
+            
+            <h4>影響</h4>
+            <p>受害者可能會感到孤立無援，並可能出現焦慮、抑鬱等心理健康問題。</p>
+
+            <h4>預防</h4>
+            <p>建立健康的社交關係，並在發現有人被孤立時，主動伸出援手。</p>
+
+            <h4>處理方法</h4>
+            <p>如果你或你的朋友受到關係霸凌，應該及時告訴信任的成年人，並尋求心理支持。</p>
+
+            <h4>相關法條</h4>
+            <h5>民法 第184條</h5>
+            <p>故意或過失不法侵害他人權利者，負損害賠償責任。</p>
+        </div>
+
+        <div id="page4" class="content">
+            <div class="header-alt">
+                <h1>性霸凌</h1>
+                <h2>對身心造成嚴重傷害</h2>
+                <h3>性霸凌是一種極端的暴力行為</h3>
+            </div>
+            
+            <h4>定義</h4>
+            <p>性霸凌，就是對他人進行性騷擾或性侵犯，無論是言語上還是行為上。</p>
+            
+            <h4>影響</h4>
+            <p>受害者可能會遭受嚴重的心理創傷，並且可能影響他們的正常生活和學習。</p>
+
+            <h4>預防</h4>
+            <p>提高性教育，並建立一個尊重和保護他人的環境。</p>
+
+            <h4>處理方法</h4>
+            <p>如果你或你的朋友遭遇性霸凌，應立即尋求幫助，並報告給有關部門。</p>
+
+            <h4>相關法條</h4>
+            <h5>性別工作平等法 第12條</h5>
+            <p>雇主不得因性別或性傾向而有不平等待遇，或對員工進行性騷擾。</p>
+
+            <h5>刑法 第221條</h5>
+            <p>對於性交罪者，處三年以上十年以下有期徒刑。</p>
+        </div>
+
+        <div id="page5" class="content">
+            <div class="header-alt">
+                <h1>反擊霸凌</h1>
+                <h2>如何有效地保護自己</h2>
+                <h3>學會反擊是保護自己的重要手段</h3>
+            </div>
+            
+            <h4>定義</h4>
+            <p>反擊霸凌，是指在受到霸凌時，勇敢地站出來保護自己，並採取適當的反擊措施。</p>
+            
+            <h4>影響</h4>
+            <p>反擊霸凌可以有效地保護受害者，並讓霸凌者知道自己的行為是不被接受的。</p>
+
+            <h4>預防</h4>
+            <p>學習自我保護的技巧，並提高自信心。</p>
+
+            <h4>處理方法</h4>
+            <p>在遭遇霸凌時，應及時反擊，但要注意不要過度使用暴力。</p>
+
+            <h4>相關法條</h4>
+            <h5>刑法 第23條</h5>
+            <p>對於現在不法之侵害，而出於防衛自己或他人權利之行為，不罰。但防衛行為過當者，得減輕或免除其刑。</p>
+        </div>
+
+        <div id="page6" class="content">
+            <div class="header-alt">
+                <h1>網路霸凌</h1>
+                <h2>虛擬世界的真實傷害</h2>
+                <h3>網路上的言語和行為也會對人造成傷害</h3>
+            </div>
+            
+            <h4>定義</h4>
+            <p>網路霸凌，是指在網路上對他人進行侮辱、威脅或欺凌行為。</p>
+            
+            <h4>影響</h4>
+            <p>受害者可能會感到心理壓力和焦慮，並且這些傷害可能會持續很長時間。</p>
+
+            <h4>預防</h4>
+            <p>保護個人隱私，不隨意在網路上透露個人信息，並提高網路安全意識。</p>
+
+            <h4>處理方法</h4>
+            <p>如果遭遇網路霸凌，應該保存相關證據，並報告給網站管理員或有關部門。</p>
+
+            <h4>相關法條</h4>
+            <h5>個人資料保護法 第21條</h5>
+            <p>蒐集、處理或利用個人資料，應明確告知其目的，並取得當事人同意。</p>
+
+            <h5>刑法 第315條之1</h5>
+            <p>未經他人同意，蒐集、處理或利用其個人資料，處三年以下有期徒刑、拘役或科或併科九萬元以下罰金。</p>
+        </div>
+
+        <footer>
+            <p>反霸凌網頁 | 開發者：山老闆</p>
+        </footer>
+    </body>
+</html>
